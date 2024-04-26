@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnU- Register Your Interest</title>
+      <!-- Favicon -->
+      <link href="img/favicon.ico" rel="icon">
+
+      <!-- Google Web Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  
+      <!-- Icon Font Stylesheet -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  
+      <!-- Libraries Stylesheet -->
+      <link href="lib/animate/animate.min.css" rel="stylesheet">
+      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+      <!-- Template Stylesheet -->
+      <link href="css/style.css" rel="stylesheet">
+      
+      <!-- Form Stylesheet -->
+      <link href="css/JoinNow.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>LearnU</h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="courses.html" class="nav-item nav-link">Courses</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a href="JoinNow.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Our Team<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+     <!-- Header Start -->
+     <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Register Your Interest</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item  text-white active">Interest</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!--Form Start-->
+    <div id="form-outer-container">
+        <div id="form-container">
+            <form id="Learner Details" action="https://formspree.io/f/moqgynlz" method="post" enctype="multipart/form-data">
+                <label>Name:</label><br>
+                <input type="text" id="name" name="name" minlength="3" placeholder="Your name" required><br><br>
+
+                <label>Date of Birth:</label><br>
+                <input type="date" name="birthyear" min="1900" max="2099" required><br><br>
+
+                <label>Phone Number:</label><br>
+                <input type="number" name="phonenumber" minlength="10" maxlength="10" required placeholder="Your phone number"><br><br>
+                
+                <label>Email:</label><br>
+                <input type="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+                <label>What would you like to learn ?</label><br>
+                <input type="checkbox" name="What would you like to learn ?" required>Cooking<br>
+                <input type="checkbox" name="What would you like to learn ?" required>Music<br>
+                <input type="checkbox" name="What would you like to learn ?" required>Communication<br>
+                <input type="checkbox" name="What would you like to learn ?" required>Financial Management<br>
+                <br>
+
+                <label>Describe your motivation to learn:</label><br>
+                <textarea id="motivation" name="message" rows="3" cols="47"  placeholder="Enter here"required></textarea><br><br>
+
+                <label>Experience Level</label><br>
+                <select id="modeofteaching" name="Expertise Level" required>
+                    <option name="Intermediate">Intermediate</option>
+                    <option name="Beginner">Beginner</option>
+                    <option name="No Experience">No Experience</option>
+                </select><br><br>
+
+                <button type="submit" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+     <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col col-lg-3 col-md-6">
+                        <h1 class="m-0 text-primary footer-size"><i class="fa fa-book me-3"></i>LearnU</h1>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>5000 MacArthur Blvd, Oakland, CA 94613</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1-617-373-2310</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>LearnU@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">LearnU</a>, All Right Reserved.
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">Team LearnU</a><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+     <!-- JavaScript Libraries -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="lib/wow/wow.min.js"></script>
+     <script src="lib/easing/easing.min.js"></script>
+     <script src="lib/waypoints/waypoints.min.js"></script>
+     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ 
+     <!-- Template Javascript -->
+     <script src="js/main.js"></script>
+</body>
+</html>
